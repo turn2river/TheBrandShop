@@ -596,7 +596,8 @@ a {
 
 .subscribe__btn-submit:hover {
   cursor: pointer;
-  box-shadow: 0 0 0 2px #f16d7f;
+  box-shadow: inset 0 0 0 2px;
+  /* box-shadow: 0 0 0 2px #f16d7f; */
   background-color: #fff;
   color: #f16d7f;
 }
