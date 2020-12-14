@@ -1,0 +1,372 @@
+/* PRODUCT PAGE STYLES */
+
+.arrivals {
+  min-height: 148px;
+  background-color: #f8f3f4;
+  display: flex;
+  align-items: center;
+}
+
+.arrivals__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrivals__title {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $mainpink;
+}
+
+.breadcrumps__list {
+  list-style: none;
+  display: flex;
+}
+
+.breadcrumps__item {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #636363;
+}
+
+.breadcrumps__item-last {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $mainpink;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.product__sort {
+  width: 849px;
+  height: 50px;
+  background-color: #f3f3f3;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.product__sort-content {
+  display: flex;
+  padding: 12px;
+}
+
+.product__sort-title {
+  padding: 5px 12px;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6f6e6e;
+  border-right: 1px solid #ebebeb;
+}
+
+.product__sort-details {
+  padding: 5px 12px;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6f6e6e;
+  z-index: 2;
+}
+
+.product__sort-list-title {
+  &::after {
+    padding-left: 20px;
+    content: "\f0d8";
+    font-family: FontAwesome;
+  }
+  &::-webkit-details-marker {
+    display: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.product__sort-details[open] .product__sort-list-title::after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+}
+
+.product__sort-list {
+  list-style: none;
+  background-color: #fff;
+  padding: 5px 12px;
+}
+
+.product__sort-list-item {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6f6e6e;
+}
+
+.product__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px 30px;
+}
+
+/* FILTERS */
+
+.product__filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.product__filter-item {
+  width: 263px;
+}
+
+.product__filter-title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6f6e6e;
+}
+
+.product__trending-text-wrap {
+  margin-top: 34px;
+  max-width: 179px;
+}
+
+.product__trending-text {
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #6f6e6e;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__trending-link {
+  line-height: 24px;
+  &:hover {
+    color: black;
+  }
+}
+
+.product__checkbox-wrap {
+  display: flex;
+  justify-content: flex-start;
+  width: 265px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+
+.product__checkbox {
+  margin-right: 30px;
+}
+
+.product__checkbox-label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #6f6e6e;
+  margin-left: 3px;
+}
+
+/* PRICE SLIDER */
+
+.range-filter {
+  width: 262px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 6px;
+  background: #f0f0f0;
+}
+
+.range-controls .bar {
+  width: 45%;
+  width: 124px;
+  height: 6px;
+  background-color: $mainpink;
+  margin-left: 20%;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 34px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-color: $mainpink;
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 16%;
+}
+
+.range-controls .toggle-max {
+  left: 65%;
+}
+
+.filter__price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6f6e6e;
+}
+
+.sales-min {
+  min-height: 341px;
+  background-color: #222224;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.sales-min__container {
+  display: flex;
+}
+
+.advantages__item-min {
+  text-align: center;
+}
+
+.advantages__item-min-pic {
+  margin-bottom: 20px;
+}
+
+.advantages__item-content-min {
+  text-align: center;
+}
+
+/* ASIDE */
+
+.aside__details {
+  min-width: 243px;
+}
+
+.aside__list-nav {
+  list-style: none;
+}
+
+.aside__list-title {
+  border-left: 5px solid #ef5b70;
+  border-bottom: 1px solid #ebebeb;
+  padding: 10px 0 10px 22px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ef5b70;
+
+  &::after {
+    content: "\f0d8";
+    font-family: FontAwesome;
+  }
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.aside__details[open] .aside__list-title::after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  color: #ef5b70;
+}
+
+.aside__list-nav {
+  display: inline-block;
+  padding: 5px 20px 5px 22px;
+  line-height: 33px;
+  font-weight: 400;
+  color: #6f6e6e;
+}
+
+.pagination__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.view__btn {
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: $mainpink;
+  outline: 2px solid $mainpink;
+  padding: 10px 35px 10px 35px;
+  transition: all 0.3s linear;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+    outline: 2px solid $mainpink;
+    background-color: $mainpink;
+    color: #fff;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 44px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  padding: 0 16px;
+}
+
+.pagination__link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #c4c4c4;
+  line-height: 26px;
+  margin-left: 16px;
+
+  &:hover:not(:nth-child(8)) {
+    color: $mainpink;
+  }
+
+  &:first-child,
+  &:nth-child(8),
+  &:nth-child(9) {
+    margin-left: 0;
+  }
+}
+
+.pagination__link-active {
+  color: $mainpink;
+}
