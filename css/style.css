@@ -1454,17 +1454,28 @@ a {
   z-index: 0;
 }
 
-.form_product_option {
+.form_product_option .button_pink {
   width: 100%;
   margin-top: 28px;
 }
 
 .button_pink {
-  color: #f16d7f;
-  text-align: center;
-  margin-left: 200px;
-  margin-top: 20px;
-  outline: 2px solid #f16d7f;
-  padding: 10px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ef5b70;
+  line-height: 26px;
+  background-color: #ffffff;
+  border: 1px solid #ef5b70;
+  border-radius: 3px;
+  padding: 8px 46px;
 }
 /*# sourceMappingURL=style.css.map */
