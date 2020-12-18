@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheBrandShop-product</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="img/logo.png" alt="logo" />
+            BRAN<span class="logo__text-pink">D</span>
+          </a>
+        </div>
+        <div class="browse">
+          <div class="browse__btn">Browse<i class="fa fa-caret-down"></i></div>
+
+          <form action="#" class="search">
+            <input class="search__field" type="text" placeholder="Search for items..." />
+            <button class="search__btn"><img src="img/search.png" alt="search" /></button>
+          </form>
+        </div>
+
+        <div class="login">
+          <a class="login__cart" href="#"><img src="img/cart.png" alt="cart" /></a>
+          <div class="login__account">
+            <a href="checkout.html">My Account<i class="fa fa-caret-down"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <div class="container nav__container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item"><a href="product.html" class="nav__link">Men</a></li>
+          <li class="nav__item"><a href="#" class="nav__link nav__link-active">Women</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Kids</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Accessories</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Featured</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Hot Deals</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <main>
+      <div class="arrivals">
+        <div class="container arrivals__container">
+          <h1 class="arrivals__title">NEW ARRIVALS</h1>
+          <ul class="breadcrumps__list">
+            <li class="breadcrumps__item"><a href="index.html" class="breadcrump__link">HOME /</a></li>
+            <li class="breadcrumps__item"><a href="#" class="breadcrump__link">MEN /</a></li>
+            <li class="breadcrumps__item-last">NEW ARRIVALS</li>
+          </ul>
+        </div>
+      </div>
+      <ul class="menu-checkout container">
+        <li class="menu-checkout__list">
+            <details class="menu-checkout__details" open="">
+                <summary class="menu-checkout__summary">
+                    01. Shipping Adress
+                </summary>
+
+                <div class="menu-checkout__content">
+                    <form action="#" class="menu-checkout__form">
+                        <h4 class="menu-checkout__name">
+                            Check as a guest or register
+                        </h4>
+                        <p class="menu-checkout__text">
+                            Register with us for future convenience
+                        </p>
+
+                        <input type="radio" class="menu-checkout__radio" id="menu-checkout__radio_guest" name="menu-checkout__radio">
+                        <label for="menu-checkout__radio_guest" class="menu-checkout__label">checkout as
+                            guest</label>
+                        <br>
+                        <input type="radio" class="menu-checkout__radio mb-34" id="menu-checkout__radio_register" name="menu-checkout__radio" checked="">
+                        <label for="menu-checkout__radio_register" class="menu-checkout__label">register</label>
+
+                        <h4 class="menu-checkout__name">register and save time!
+                        </h4>
+                        <p class="menu-checkout__text mb-34">
+                            Register with us for future convenience
+                        </p>
+                        <p class="menu-checkout__text">
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                            Fast and easy checkout
+                        </p>
+                        <p class="menu-checkout__text mb-34">
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                            Easy access to your order history and status
+                        </p>
+
+                        <a href="#" class="menu-checkout__button">continue</a>
+                    </form>
+
+                    <form action="#" class="menu-checkout__form">
+                        <h4 class="menu-checkout__name">
+                            Already registed?
+                        </h4>
+                        <p class="menu-checkout__text">
+                            Please log in below
+                        </p>
+
+                        <label for="menu-checkout__email" class="menu-checkout__label">
+                            EMAIL ADDRESS<span class="note txt-17">*</span>
+                        </label>
+                        <input type="email" name="menu-checkout__email" id="menu-checkout__email" class="menu-checkout__input">
+
+                        <label for="menu-checkout__password" class="menu-checkout__label">
+                            PASSWORD<span class="note txt-17">*</span>
+                        </label>
+                        <input type="email" name="menu-checkout__password" id="menu-checkout__password" class="menu-checkout__input">
+
+                        <p class="menu-checkout__text note mb-29">
+                            * Required Fileds
+                        </p>
+
+                        <a href="#" class="menu-checkout__button">Log in</a>
+                        <a href="#" class="menu-checkout__link-forgot">Forgot Password ?</a>
+                    </form>
+                </div>
+            </details>
+        </li>
+        <li class="menu-checkout__list">
+            <details class="menu-checkout__details">
+                <summary class="menu-checkout__summary">02. BILLING INFORMATION
+
+                </summary>
+            </details>
+        </li>
+        <li class="menu-checkout__list">
+            <details class="menu-checkout__details">
+                <summary class="menu-checkout__summary">03. SHIPPING INFORMATION
+
+                </summary>
+            </details>
+
+        </li>
+        <li class="menu-checkout__list">
+            <details class="menu-checkout__details">
+                <summary class="menu-checkout__summary">04. SHIPPING METHOD
+
+                </summary>
+            </details>
+        </li>
+        <li class="menu-checkout__list">
+            <details class="menu-checkout__details">
+                <summary class="menu-checkout__summary">05. PAYMENT METHOD
+
+                </summary>
+            </details>
+        </li>
+        <li class="menu-checkout__list">
+            <details class="menu-checkout__details">
+                <summary class="menu-checkout__summary">06. ORDER REVIEW
+
+                </summary>
+            </details>
+        </li>
+    </ul>
+
+      </main>
+
+
+<section class="feedback">
+  <div class="container feedback__container">
+    <div class="feedback__reviews">
+      <div class="review__portrait">
+        <img src="img/feedback_portrait1.png" alt="portrait1" />
+      </div>
+      <div>
+        <div class="review__content">
+          <p class="review__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+          <p class="review__name">Bin Burhan</p>
+          <p class="review__adress">Dhaka, Bd</p>
+          <div class="review__pagination">
+            <button class="pagintaion__btn"></button>
+            <button class="pagintaion__btn pagintaion__btn-active"></button>
+            <button class="pagintaion__btn"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feedback__subscribe">
+      <div class="subscribe__title">
+        Subscribe
+        <p class="subscribe__subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
+      </div>
+      <form class="subscribe__form">
+        <input class="subscribe__input-email" type="email" placeholder="Enter your email" />
+        <input class="subscribe__btn-submit" type="submit" value="Subscribe" />
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <section class="container footer__top">
+    <div class="footer__top-container">
+      <div class="footer__about">
+        <div class="footer__logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="img/logo.png" alt="logo" />
+            BRAN<span class="logo__text-pink">D</span>
+          </a>
+        </div>
+        <div class="footer__text">
+          <p class="footer__text-paragraph">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+          <p class="footer__text-paragraph">Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+        </div>
+      </div>
+      <div class="footer__info">
+        <ul class="footer__info-list">
+          <li class="footer__info-item"><h3 class="footer__info-title">COMPANY</h3></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">Home</a></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">Shop</a></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">About</a></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">How It Works</a></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <ul class="footer__info-list">
+          <li class="footer__info-item"><h3 class="footer__info-title">INFORMATION</h3></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">Tearms & Condition</a></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">Privacy Policy</a></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">How to Buy</a></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">How to Sell</a></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">Promotion</a></li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <ul class="footer__info-list">
+          <li class="footer__info-item"><h3 class="footer__info-title">SHOP CATEGORY</h3></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">Men</a></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">Women</a></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">Kids</a></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">Apparel</a></li>
+          <li class="footer__info-item"><a href="#" class="footer__info-link">Browse all</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-bottom">
+    <div class="container footer__bottom-container">
+      <div class="footer__bottom-copy">
+        <p>&copy; 2017 Brand All Rights Reserved.</p>
+      </div>
+      <div class="footer__bottom-social">
+        <a class="footer__bottom-social-link" href="https://www.facebook.com/" target="_blank">
+          <i class="footer__fa fa fa-facebook"></i>
+        </a>
+        <a class="footer__bottom-social-link" href="https://twitter.com/" target="_blank">
+          <i class="footer__fa fa fa-twitter"></i>
+        </a>
+        <a class="footer__bottom-social-link" href="https://www.linkedin.com/" target="_blank"> <i class="footer__fa fa fa-linkedin"></i></a>
+        <a class="footer__bottom-social-link" href="https://www.pinterest.com/" target="_blank"> <i class="footer__fa fa fa-pinterest-p"></i></a>
+        <a class="footer__bottom-social-link" href="https://www.google.com/" target="_blank"> <i class="footer__fa fa fa-google"></i></a>
+      </div>
+    </div>
+  </section>
+</footer>
+</body>
+</html>
